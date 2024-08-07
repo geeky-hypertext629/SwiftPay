@@ -1,7 +1,7 @@
 - Clone the repo
 
 ```jsx
-git clone https://github.com/sks8784/SwiftPay-Project
+git clone https://github.com/geeky-hypertext629/SwiftPay
 ```
 
 - npm install
