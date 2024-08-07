@@ -10,7 +10,7 @@ async function main() {
       number: '1111111111',
       password: await bcrypt.hash('alice', 10),
       name: 'alice',
-      quickpayId:'1111111111@quickpay',
+      SwiftpayId:'1111111111@Swiftpay',
       Balance: {
         create: {
             amount: 20000,
@@ -35,7 +35,7 @@ async function main() {
       number: '2222222222',
       password: await bcrypt.hash('bob', 10),
       name: 'bob',
-      quickpayId:'2222222222@quickpay',
+      SwiftpayId:'2222222222@Swiftpay',
       Balance: {
         create: {
             amount: 2000,

@@ -7,7 +7,7 @@ import { AppbarClient } from "../components/AppbarClient";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "QuickPay",
+  title: "Swift Pay",
   description: "Simple payment app",
 };
 

@@ -1,5 +1,5 @@
 {
-  "name": "quickpay",
+  "name": "Swiftpay",
   "private": true,
   "scripts": {
     "build": "turbo build",

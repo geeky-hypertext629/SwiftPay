@@ -37,7 +37,7 @@ export const authOptions = {
                     data: {
                         number: credentials.phone,
                         password: hashedPassword,
-                        quickpayId: credentials.phone+'@quickpay',
+                        SwiftpayId: credentials.phone+'@Swiftpay',
                         Balance: {
                             create: {
                                 amount: 0,

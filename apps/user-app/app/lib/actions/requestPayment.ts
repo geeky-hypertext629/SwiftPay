@@ -42,12 +42,12 @@ export async function requestPayment(receiverPhoneNumber: string, amount: number
             data: {
                 transactionId: transactionId,
                 userId: Number(senderId),
-                sender: receiver?.quickpayId,
-                receiver: sender?.quickpayId,
+                sender: receiver?.SwiftpayId,
+                receiver: sender?.SwiftpayId,
                 type: 'CREDIT',
                 status: 'PENDING',
                 amount,
-                paymentMethod: 'QuickPay'
+                paymentMethod: 'SwiftPay'
             }
         })
 
@@ -55,12 +55,12 @@ export async function requestPayment(receiverPhoneNumber: string, amount: number
             data:{
                 transactionId: transactionId,
                 userId: receiver.id,
-                sender: receiver?.quickpayId,
-                receiver: sender?.quickpayId,
+                sender: receiver?.SwiftpayId,
+                receiver: sender?.SwiftpayId,
                 type: 'DEBIT',
                 status: 'PENDING',
                 amount,
-                paymentMethod: 'QuickPay'
+                paymentMethod: 'SwiftPay'
             }  
         })
 

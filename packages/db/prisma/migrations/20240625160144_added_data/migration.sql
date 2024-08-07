@@ -20,7 +20,7 @@ CREATE TABLE "User" (
     "name" TEXT,
     "number" TEXT NOT NULL,
     "password" TEXT NOT NULL,
-    "quickpayId" TEXT NOT NULL,
+    "SwiftpayId" TEXT NOT NULL,
 
     CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
@@ -106,7 +106,7 @@ CREATE UNIQUE INDEX "User_email_key" ON "User"("email");
 CREATE UNIQUE INDEX "User_number_key" ON "User"("number");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "User_quickpayId_key" ON "User"("quickpayId");
+CREATE UNIQUE INDEX "User_SwiftpayId_key" ON "User"("SwiftpayId");
 
 -- CreateIndex
 CREATE UNIQUE INDEX "Merchant_email_key" ON "Merchant"("email");

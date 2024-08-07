@@ -13,7 +13,7 @@ model User {
   name              String?
   number            String              @unique
   password          String
-  quickpayId        String              @unique
+  SwiftpayId        String              @unique
   OnRampTransaction OnRampTransaction[]
   Balance           Balance[]
   sentTransfers     p2pTransfer[]       @relation(name: "FromUserRelation")

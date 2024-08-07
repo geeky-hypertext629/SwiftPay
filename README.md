@@ -1,7 +1,7 @@
 - Clone the repo
 
 ```jsx
-git clone https://github.com/sks8784/QuickPay-Project
+git clone https://github.com/sks8784/SwiftPay-Project
 ```
 
 - npm install

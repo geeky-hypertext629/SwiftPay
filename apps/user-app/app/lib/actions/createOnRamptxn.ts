@@ -45,7 +45,7 @@ export async function createOnRampTransaction(amount: number, provider: string) 
             transactionId: randomstring.generate(14),
             userId: Number(userId),
             sender: provider,
-            receiver: user?.quickpayId,
+            receiver: user?.SwiftpayId,
             type: 'CREDIT',
             status: 'PENDING',
             amount,

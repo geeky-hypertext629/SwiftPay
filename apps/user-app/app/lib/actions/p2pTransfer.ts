@@ -75,12 +75,12 @@ export async function p2pTransfer(to: string, amount: number) {
       data: {
         transactionId: transactionId,
         userId: Number(from),
-        sender: fromUser?.quickpayId,
-        receiver: toUser?.quickpayId,
+        sender: fromUser?.SwiftpayId,
+        receiver: toUser?.SwiftpayId,
         amount,
         type: 'DEBIT',
         status: 'SUCCEEDED',
-        paymentMethod: 'QuickPay'
+        paymentMethod: 'SwiftPay'
       }
     })
 
@@ -88,12 +88,12 @@ export async function p2pTransfer(to: string, amount: number) {
       data: {
         transactionId: transactionId,
         userId: toUser.id,
-        sender: fromUser.quickpayId,
-        receiver: toUser?.quickpayId,
+        sender: fromUser.SwiftpayId,
+        receiver: toUser?.SwiftpayId,
         amount,
         type: 'CREDIT',
         status: 'SUCCEEDED',
-        paymentMethod: 'QuickPay'
+        paymentMethod: 'SwiftPay'
       }
     })
   });
